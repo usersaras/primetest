@@ -13,7 +13,7 @@ document.getElementById("main").style.display = "none";
 //   showPage();
 // }, "3000")
 
-$(window).ready(function(){
+$(window).load(function(){
   $("#loader").fadeOut("slow");
   $('#loader').hide();
   $("#main").fadeIn("slow");
