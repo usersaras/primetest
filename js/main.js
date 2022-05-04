@@ -4,13 +4,19 @@ console.log("check");
 
 document.getElementById("main").style.display = "none";
 
-function showPage() {
-  $("#loader").fadeOut("slow");
-  $("#main").fadeIn("slow");
-}
+// function showPage() {
+//   $("#loader").fadeOut("slow");
+//   $("#main").fadeIn("slow");
+// }
 
-$(window).load(function(){
-  showPage();
+// setTimeout(() => {
+//   showPage();
+// }, "3000")
+
+$(window).ready(function(){
+  $("#loader").fadeOut("slow");
+  $('#loader').hide();
+  $("#main").fadeIn("slow");
 })
 
 
