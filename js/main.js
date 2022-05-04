@@ -1,8 +1,8 @@
 console.log("check");
 
 
-
-document.getElementById("main").style.display = "none";
+$(document).ready(function(){
+  document.getElementById("main").style.display = "none";
 
 function showPage() {
   $("#loader").fadeOut("slow");
@@ -19,8 +19,6 @@ setTimeout(() => {
 //   $("#main").fadeIn("slow");
 // })
 
-
-$(document).ready(function(){
   $(".owl-carousel").owlCarousel({
       margin: 20,
       items: 3,
@@ -37,7 +35,28 @@ $(document).ready(function(){
         }
       }
   });
+
+  $(".owl-carousel-2").owlCarousel({
+    margin: 20,
+    items: 3,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768 : {
+        items: 2
+      },
+      1366 : {
+        items: 3
+      }
+    }
 });
+});
+
+
+
+
 
 $(document).ready(function(){
 
@@ -77,14 +96,6 @@ $(document).ready(function(){
     $("#ex1-pills-3").addClass("active")
   })
 })
-
-window.onload=function(){
-
-  document.getElementById("ex1-pills-1").addEventListener("click", clicker)
-  function clicker(){
-    console.log("abc")
-  }
-}
 
 AOS.init({
   easing: 'ease-in-out-sine'

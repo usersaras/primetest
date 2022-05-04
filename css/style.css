@@ -26,7 +26,7 @@ a {
 }
 
 .bg-blue {
-  background: #2f2f80;
+  background: #022B56;
 }
 
 .bg-orange {
@@ -34,7 +34,7 @@ a {
 }
 
 .text-blue {
-  color: #2f2f80;
+  color: #022B56;
 }
 
 .text-orange {
@@ -42,7 +42,7 @@ a {
 }
 
 .btn-blue {
-  background: #2f2f80;
+  background: #022B56;
 }
 
 .btn-orange {
@@ -68,12 +68,12 @@ a {
 }
 
 .btn-outline-blue {
-  border: 0.75px solid #2f2f80;
-  color: #2f2f80;
+  border: 0.75px solid #022B56;
+  color: #022B56;
 }
 
 .btn-outline-blue:hover {
-  background: #2f2f80;
+  background: #022B56;
   color: white;
 }
 
@@ -100,6 +100,14 @@ body .spin {
   position: absolute;
   top: 50%;
   translate: transformY(-50%);
+}
+
+body .main-logo {
+  height: 75px;
+}
+
+body .fs-custom-big {
+  font-size: 48px;
 }
 
 body #navbarSupportedContent ul li a:hover {
@@ -153,7 +161,7 @@ body .owl-dots .owl-dot {
 }
 
 body .owl-dots .active {
-  background-color: #2f2f80;
+  background-color: #022B56;
 }
 
 body input {
@@ -188,7 +196,7 @@ body .work-card {
 }
 
 body .work-card:hover {
-  background-color: #2f2f80;
+  background-color: #022B56;
   -webkit-filter: drop-shadow(1px 1px 10px black);
           filter: drop-shadow(1px 1px 10px black);
   -webkit-transition: 0.3s;
@@ -250,20 +258,23 @@ body .about-hover {
 body .about-hover:after {
   content: "";
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #2f2f80;
+  height: 95%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #022B56;
   opacity: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
 body .about-hover:hover::after {
-  opacity: 0.3;
+  opacity: 0.7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 body .about-hover:hover blockquote {
@@ -274,7 +285,7 @@ body .about-hover:hover blockquote {
 }
 
 body .about-hover img {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -288,5 +299,9 @@ body .about-hover blockquote {
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+body nav .active {
+  color: #FF9933 !important;
 }
 /*# sourceMappingURL=style.css.map */
