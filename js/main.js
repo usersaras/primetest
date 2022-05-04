@@ -4,20 +4,20 @@ console.log("check");
 
 document.getElementById("main").style.display = "none";
 
-// function showPage() {
-//   $("#loader").fadeOut("slow");
-//   $("#main").fadeIn("slow");
-// }
-
-// setTimeout(() => {
-//   showPage();
-// }, "3000")
-
-$(window).load(function(){
+function showPage() {
   $("#loader").fadeOut("slow");
-  $('#loader').hide();
   $("#main").fadeIn("slow");
-})
+}
+
+setTimeout(() => {
+  showPage();
+}, "2000")
+
+// $(window).load(function(){
+//   $("#loader").fadeOut("slow");
+//   $('#loader').hide();
+//   $("#main").fadeIn("slow");
+// })
 
 
 $(document).ready(function(){
