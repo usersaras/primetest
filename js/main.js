@@ -1,3 +1,18 @@
+console.log("check");
+
+
+
+document.getElementById("main").style.display = "none";
+
+function showPage() {
+  $("#loader").fadeOut("slow");
+  $("#main").fadeIn("slow");
+}
+
+$(window).load(function(){
+  showPage();
+})
+
 
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
