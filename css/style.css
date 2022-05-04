@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-blue {
+  background: #2f2f80;
+}
+
+.bg-orange {
+  background: #FF9933;
+}
+
+.text-blue {
+  color: #2f2f80;
+}
+
+.text-orange {
+  color: #FF9933;
+}
+
+.btn-blue {
+  background: #2f2f80;
+}
+
+.btn-orange {
+  background: #FF9933;
+  color: white;
+}
+
+.btn-orange:hover {
+  background: none;
+  border: 1px solid #FF9933;
+  color: #FF9933;
+}
+
+.btn-outline-orange {
+  background: none;
+  border: 1px solid #FF9933;
+  color: #FF9933;
+}
+
+.btn-outline-orange:hover {
+  background: #FF9933;
+  color: white;
+}
+
+.btn-outline-blue {
+  border: 0.75px solid #2f2f80;
+  color: #2f2f80;
+}
+
+.btn-outline-blue:hover {
+  background: #2f2f80;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+}
+
+body .main-banner {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .main-banner .banner-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .body-section {
+  padding: 100px 0;
+}
+
+body .work-card-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .owl-dots {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+body .owl-dots .owl-dot {
+  background-color: grey;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+body .owl-dots .active {
+  background-color: #2f2f80;
+}
+
+body input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #FF9933;
+}
+
+body .textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border: 1px solid #FF9933;
+}
+
+body td {
+  text-align: left !important;
+  padding-left: 0  !important;
+}
+
+body .background-bg {
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .work-card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .work-card:hover {
+  background-color: #2f2f80;
+  -webkit-filter: drop-shadow(1px 1px 10px black);
+          filter: drop-shadow(1px 1px 10px black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .transparent-black-bg {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+body .smallfa {
+  font-size: 10px;
+}
+
+body .navlinks a {
+  color: black;
+}
+
+body .hero-img {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-25px);
+            transform: translateY(-25px);
+  }
+}
+
+body .about-hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+body .about-hover:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2f2f80;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body .about-hover:hover::after {
+  opacity: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .about-hover:hover blockquote {
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .about-hover img {
+  height: 70vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .about-hover blockquote {
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

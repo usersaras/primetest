@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+$primary-blue: #2f2f80;
+$seconary-orange: #FF9933;
+$complementary-black: #333;
+
+.bg-blue{
+    background: $primary-blue;
+}
+
+.bg-orange {
+    background: $seconary-orange;
+}
+
+.text-blue{
+    color: $primary-blue;
+}
+
+.text-orange{
+    color: $seconary-orange;
+}
+
+.btn-blue{
+    background: $primary-blue;;
+}
+
+.btn-orange{
+    background:  $seconary-orange;
+    color: white;
+
+    &:hover{
+        background: none;
+        border: 1px solid $seconary-orange;
+        color: $seconary-orange;
+    }
+}
+
+.btn-outline-orange {
+    background: none;
+        border: 1px solid $seconary-orange;
+        color: $seconary-orange;
+
+    &:hover{
+        background:  $seconary-orange;
+    color: white;
+    }
+}
+
+.btn-outline-blue{
+    border: 0.75px solid $primary-blue;
+    color: $primary-blue;
+
+    &:hover{
+        background: $primary-blue;
+        color: white
+    }
+}
+
+
+body{
+    
+  font-size: 16px;
+  color: white;
+
+    .main-banner{
+        height: 100vh;
+        background: rgba($color: #000000, $alpha: 0.3);
+        background-image: url('../img/banner.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+
+        .banner-text{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .body-section{
+        padding: 100px 0;
+    }
+
+    .work-card-wrapper{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .owl-dots{
+     text-align: center;
+     display: flex;
+        gap: 5px;
+        justify-content: center;
+        margin: 20px 0;
+        .owl-dot{
+            background-color: grey;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+        .active{
+            background-color: $primary-blue;
+        }
+    }
+
+    input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid $seconary-orange;
+    }
+    .textarea{
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border: 1px solid $seconary-orange;
+    }
+
+    td {
+        text-align: left !important;
+        padding-left: 0  !important;
+    }
+
+    .background-bg{
+        background: rgba($color: #000000, $alpha: 0.3);
+        background-image: url('../img/banner.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .work-card{
+        transition: 0.3s;
+        &:hover{
+            background-color: $primary-blue;
+            filter: drop-shadow(1px 1px 10px black);
+            transition: 0.3s;
+        }
+    }
+
+    .transparent-black-bg{
+        background: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    .smallfa {
+        font-size: 10px;
+    }
+
+    .navlinks {
+        a {
+            color: black;
+        }
+    }
+
+    .hero-img{
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+
+    @keyframes bounce {
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-25px);
+        }
+    }
+
+   .about-hover{
+    transition: 0.3s;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &:after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: $primary-blue;
+        opacity: 0;
+        transition: 0.8s;
+    }
+    &:hover{
+        &::after{
+            opacity: 0.3;
+            transition: 0.3s;
+        }
+
+        blockquote{
+            opacity: 1;
+            top: 50%;
+            transition: 0.3s;
+        }
+    }
+    img{
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    blockquote{
+        top: 45%;
+        transform: translateY(-50%);
+        z-index: 99;
+        opacity: 0;
+        transition: 0.3s;
+    }
+   }
+
+
+   
+}
