@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 p {
     margin: 0;
     padding: 0;
@@ -139,6 +140,7 @@ body{
     }
 
     .owl-dots{
+        margin-top: 55px !important;
      text-align: center;
      display: flex;
         gap: 5px;
@@ -209,14 +211,14 @@ body{
         animation-duration: 5s;
     }
 
-    @keyframes bounce {
-        0%{
-            transform: translateY(0);
-        }
-        50%{
-            transform: translateY(-25px);
-        }
-    }
+    // @keyframes bounce {
+    //     0%{
+    //         transform: translateY(0);
+    //     }
+    //     50%{
+    //         transform: translateY(-25px);
+    //     }
+    // }
 
    .about-hover{
     transition: 0.3s;
@@ -269,8 +271,96 @@ nav{
         color: $seconary-orange !important;
     }
 }
+
+.career{
+
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    .img-35vh{
+        height: 35vh;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    &:before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        opacity: 0;
+        background: $primary-blue;
+        transition: 0.3s;
+    }
+
+    &:hover{
+        &::before{
+            opacity: 0.5;
+            top: 0;
+            transition: 0.3s;
+        }
+
+        .career-head{
+            opacity: 1;
+            top: 50%;
+            transition: 0.3s;
+        }
+    }
+
+    .career-head{
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: 0.3s;
+    }
+}
        
 
 
-   
+iframe {
+    display: block;
+    width: 100%;
+    height: 50vh;
+}
+
+.transparent-black-bg{
+    iframe{
+        height: 20vh;
+    }
+}
+
+.social-media a {
+    transition: 0.3s;
+    i{
+        transition: 0.3s;
+    &:hover{
+        color: $seconary-orange !important;
+        transition: 0.3s;
+    }
+}
+}
+
+.navlinks {
+    a{
+        &:hover {
+            color: $seconary-orange;
+        }
+    }
+}
+
+input{
+    color: white;
+}
+.navbar {
+    z-index: 999;
+    top: 0;
+}
+
+.drop-shadow {
+    filter: drop-shadow(1px 0px 15px rgb(204, 204, 204));
+}
 }

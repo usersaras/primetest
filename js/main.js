@@ -4,20 +4,15 @@ console.log("check");
 $(document).ready(function(){
   document.getElementById("main").style.display = "none";
 
-function showPage() {
+$(window).load(function(){
   $("#loader").fadeOut("slow");
+  $('#loader').hide();
   $("#main").fadeIn("slow");
-}
+  AOS.init()
+  AOS.refresh()
+})
 
-setTimeout(() => {
-  showPage();
-}, "2000")
 
-// $(window).load(function(){
-//   $("#loader").fadeOut("slow");
-//   $('#loader').hide();
-//   $("#main").fadeIn("slow");
-// })
 
   $(".owl-carousel").owlCarousel({
       margin: 20,

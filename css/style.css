@@ -142,6 +142,7 @@ body .work-card-wrapper {
 }
 
 body .owl-dots {
+  margin-top: 55px !important;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,28 +225,6 @@ body .hero-img {
           animation-duration: 5s;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-25px);
-            transform: translateY(-25px);
-  }
-}
-
 body .about-hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -303,5 +282,100 @@ body .about-hover blockquote {
 
 body nav .active {
   color: #FF9933 !important;
+}
+
+body .career {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body .career .img-35vh {
+  height: 35vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+body .career:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  opacity: 0;
+  background: #022B56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career:hover::before {
+  opacity: 0.5;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career:hover .career-head {
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career .career-head {
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body iframe {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+body .transparent-black-bg iframe {
+  height: 20vh;
+}
+
+body .social-media a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .social-media a i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .social-media a i:hover {
+  color: #FF9933 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .navlinks a:hover {
+  color: #FF9933;
+}
+
+body input {
+  color: white;
+}
+
+body .navbar {
+  z-index: 999;
+  top: 0;
+}
+
+body .drop-shadow {
+  -webkit-filter: drop-shadow(1px 0px 15px #cccccc);
+          filter: drop-shadow(1px 0px 15px #cccccc);
 }
 /*# sourceMappingURL=style.css.map */
