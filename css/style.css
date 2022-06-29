@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bg-blue {
+  background: #022B56;
+}
+
+.bg-orange {
+  background: #FF9933;
+}
+
+.text-blue {
+  color: #022B56;
+}
+
+.text-orange {
+  color: #FF9933;
+}
+
+.btn-blue {
+  background: #022B56;
+}
+
+.btn-orange {
+  background: #FF9933;
+  color: white;
+}
+
+.btn-orange:hover {
+  background: none;
+  border: 1px solid #FF9933;
+  color: #FF9933;
+}
+
+.btn-outline-orange {
+  background: none;
+  border: 1px solid #FF9933;
+  color: #FF9933;
+}
+
+.btn-outline-orange:hover {
+  background: #FF9933;
+  color: white;
+}
+
+.btn-outline-blue {
+  border: 0.75px solid #022B56;
+  color: #022B56;
+}
+
+.btn-outline-blue:hover {
+  background: #022B56;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  color: white;
+}
+
+body .loader {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .spin {
+  position: absolute;
+  top: 50%;
+  translate: transformY(-50%);
+}
+
+body .main-logo {
+  height: 75px;
+}
+
+body .fs-custom-big {
+  font-size: 48px;
+}
+
+body #navbarSupportedContent ul li a:hover {
+  color: #FF9933 !important;
+}
+
+body .main-banner {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .main-banner .banner-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .body-section {
+  padding: 100px 0;
+}
+
+body .work-card-wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body .owl-dots {
+  margin-top: 55px !important;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+body .owl-dots .owl-dot {
+  background-color: grey;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+body .owl-dots .active {
+  background-color: #022B56;
+}
+
+body input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #FF9933;
+}
+
+body .textarea {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border: 1px solid #FF9933;
+}
+
+body td {
+  text-align: left !important;
+  padding-left: 0  !important;
+}
+
+body .background-bg {
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .work-card {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .work-card:hover {
+  background-color: #022B56;
+  -webkit-filter: drop-shadow(1px 1px 10px black);
+          filter: drop-shadow(1px 1px 10px black);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .transparent-black-bg {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+body .smallfa {
+  font-size: 10px;
+}
+
+body .navlinks a {
+  color: black;
+}
+
+body .hero-img {
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+body .about-hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+body .about-hover:after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #022B56;
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body .about-hover:hover::after {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+body .about-hover:hover blockquote {
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .about-hover img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .about-hover blockquote {
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body nav .active {
+  color: #FF9933 !important;
+}
+
+body .career {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+body .career .img-35vh {
+  height: 35vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+body .career:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  opacity: 0;
+  background: #022B56;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career:hover::before {
+  opacity: 0.5;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career:hover .career-head {
+  opacity: 1;
+  top: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .career .career-head {
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body iframe {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+body .transparent-black-bg iframe {
+  height: 20vh;
+}
+
+body .social-media a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .social-media a i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .social-media a i:hover {
+  color: #FF9933 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .navlinks a:hover {
+  color: #FF9933;
+}
+
+body input {
+  color: white;
+}
+
+body .navbar {
+  z-index: 999;
+  top: 0;
+}
+
+body .drop-shadow {
+  -webkit-filter: drop-shadow(1px 0px 15px #cccccc);
+          filter: drop-shadow(1px 0px 15px #cccccc);
+}
+/*# sourceMappingURL=style.css.map */
+
